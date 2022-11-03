@@ -4,27 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Site</title>
+    <meta name="description" content="Это сайт-резюме Рамиля Насыбуллина">
+    <title>Ramil resume</title>
+    <link rel="stylesheet" href="mysite.css">
 </head>
 <body>
-    <img src="img\ava.PNG" alt="myphoto" width="200" >
+  <div class="container">
+  <img src="img\ava.PNG" alt="myphoto" class="avatar">
+
+  <div class="box">
     <h1>Рамиль Насыбуллин</h1>
     <p>Я изучаю <strong>front-end разработку</strong>. <br> 
       Это непросто, но <em>интересно</em>.</p>
       <p><b>Список социальных сетей:<b></p>
         <a href="https://vk.com/id39863902" target="_blank">Vkontakte</a>
-    <hr>
+      </div>
 
+    <div class="card1">
   <h2>Мои Хобби</h2>
-  <ol>
-    <li>Путешесвтия</li>
-    <li>Блоггинг</li>
-    <li>Горные Лыжи</li>
-    <li>ММА</li>
+  <ol class="list">
+    <li>Путешествия</li>
+    <li>Компьютеры</li>
+    <li>Автомобили</li>
+    <li>Аудиокниги</li>
   </ol>
-  <hr>
-  <h3>Опыт работы</h3>
-  <table>
+</div>
+<div class="card2">
+  <h2>Опыт работы</h2>
+  <table class="table">
     <thead>
       <th>Название</th>
       <th>Должность</th>
@@ -48,26 +55,28 @@
       </tr>
     </tbody>
   </table>
+</div>
 
-  <p>Связаться со мной</p>
+  
 
-  <form action="">
-    <div>
+  <form action="" class="form">
+    <h2>Связаться со мной</h2>
+    <div class="form-group">
       <label for="text">Ваше имя:</label>
       <input type="text" id="text" placeholder="Введите имя">
     </div>
-    <div>
+    <div class="form-group">
       <label for="email">Ваш email:</label>
       <input type="email" id="email" placeholder="Введите email">
     </div>
-    <div>
+    <div class="form-group">
       <label for="message">Ваше сообщение:</label>
-      <br>
       <textarea name="" id="" cols="30" rows="10" placeholder="Веедите сообщение..."></textarea>
     </div>
     <div>
-      <button type="submit">Отправить!</button>
+      <button class="btn" type="submit">Отправить!</button>
     </div>
+  </div> 
   </form>
 
 </body>
